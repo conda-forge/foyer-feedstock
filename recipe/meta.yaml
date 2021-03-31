@@ -1,5 +1,5 @@
 {% set name = "foyer" %}
-{% set version = "0.7.7" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/foyer/archive/{{ version }}.tar.gz
-  sha256: fac9f0468094dda46d92e7eb24b15511aae281e51a16a618cfbeaea83a3c4812
+  sha256: 341d13a6b5d02e0af79f84047d52c48a21c191328b1bc22889153e8356c9f2c2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
     - openmm >=7.5.0
     - parmed
     - networkx >=2.0
-    - lark-parser 
+    - lark-parser
     - requests
     - lxml
     - protobuf
@@ -37,7 +37,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.rst
-  summary: 'Atom-typing and force field dissemination.'
+  summary: Atom-typing and force field dissemination.
   description: |
     Foyer is an open-source Python tool that enables users to define and apply
     force field atom-typing rules in a format that is both human- and
