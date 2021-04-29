@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
   run:
     - openmm >=7.5.0
     - parmed
-    - networkx >=2.0
+    - networkx >=2.5
     - lark-parser
     - requests
     - lxml
