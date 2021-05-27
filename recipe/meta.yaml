@@ -27,6 +27,7 @@ requirements:
     - lxml
     - protobuf
     - python >=3.6
+    - gmso >=0.6.0
 
 test:
   imports:
