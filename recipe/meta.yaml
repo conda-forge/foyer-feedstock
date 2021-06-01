@@ -1,5 +1,5 @@
 {% set name = "foyer" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/foyer/archive/{{ version }}.tar.gz
-  sha256: 551710d7bc252f30cceb75efe0ae2b12c98f9518952c80cf6f40f3e1e6b36256
+  sha256: 96ee708cf3254362160147f6c5e331c8eea180b4ca23b9b140184d2fabb4b2b0
 
 build:
   noarch: python
