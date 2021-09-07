@@ -19,6 +19,8 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - numpy
+    - ele
     - openmm >=7.6
     - parmed >=3.4.3
     - networkx >=2.5
