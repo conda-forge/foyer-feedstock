@@ -19,8 +19,8 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - openmm =7.5.1
-    - parmed
+    - openmm >=7.6
+    - parmed >=3.4.3
     - networkx >=2.5
     - lark-parser
     - requests
