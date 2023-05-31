@@ -1,11 +1,11 @@
-About foyer
-===========
+About foyer-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/foyer-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mosdef-hub/foyer
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/foyer-feedstock/blob/main/LICENSE.txt)
 
 Summary: Atom-typing and force field dissemination.
 
