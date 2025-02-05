@@ -11,13 +11,13 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.9, <=3.12
+    - python {{ python_min }}
   run:
     - numpy
     - ele
@@ -27,10 +27,12 @@ requirements:
     - lark
     - requests
     - lxml
-    - python >=3.9, <=3.12
+    - python >={{ python_min }},<3.13a0
     - gmso >=0.9.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - foyer
 
