@@ -157,6 +157,7 @@ Feedstock Maintainers
 =====================
 
 * [@CalCraven](https://github.com/CalCraven/)
+* [@chrisjonesBSU](https://github.com/chrisjonesBSU/)
 * [@daico007](https://github.com/daico007/)
 * [@justinGilmer](https://github.com/justinGilmer/)
 * [@umesh-timalsina](https://github.com/umesh-timalsina/)
