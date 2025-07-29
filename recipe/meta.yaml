@@ -1,5 +1,5 @@
 {% set name = "foyer" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/foyer/archive/{{ version }}.tar.gz
-  sha256: 42529c02cae120901d004d16b825cff843d827710f5b65b43c48473eb3a50b90
+  sha256: 12bfb4948cd1f3ce31c01aab35a84390686b270a9d5e95cdb7a11217872fe681
 
 build:
   noarch: python
@@ -17,9 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9, <=3.12
+    - python >=3.10, <=3.13
+    - setuptools
   run:
-    - numpy
+    - numpy >=2.0,<2.3
     - ele
     - openmm >=7.7
     - parmed >=3.4.3
@@ -27,8 +28,8 @@ requirements:
     - lark
     - requests
     - lxml
-    - python >=3.9, <=3.12
-    - gmso >=0.9.0
+    - python >=3.10, <=3.13
+    - gmso >=0.12.0
 
 test:
   imports:
