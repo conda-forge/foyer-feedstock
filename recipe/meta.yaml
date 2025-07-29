@@ -20,7 +20,7 @@ requirements:
     - python >=3.10, <=3.13
     - setuptools
   run:
-    - numpy >=2.0
+    - numpy >=2.0,<2.3
     - ele
     - openmm >=7.7
     - parmed >=3.4.3
