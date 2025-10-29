@@ -1,5 +1,6 @@
+{% set python_min = '3.10' %}
 {% set name = "foyer" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://github.com/mosdef-hub/foyer/archive/{{ version }}.tar.gz
-  sha256: 12bfb4948cd1f3ce31c01aab35a84390686b270a9d5e95cdb7a11217872fe681
+  sha256: 9f1e21f0c8d0f55f0fd39c90072264bbca2b52ec987a413523b6b54601c113a7
 
 build:
   noarch: python
@@ -17,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.10, <=3.13
+    - python {{ python_min }}
     - setuptools
   run:
     - numpy >=2.0,<2.3
@@ -28,7 +29,7 @@ requirements:
     - lark
     - requests
     - lxml
-    - python >=3.10, <=3.13
+    - python >={{ python_min }}
     - gmso >=0.12.0
 
 test:
