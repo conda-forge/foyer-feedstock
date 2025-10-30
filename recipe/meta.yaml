@@ -12,7 +12,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1 
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
   run:
     - numpy >=2.0,<2.3
     - ele
-    - openmm >=7.7
+    - openmm >=7.7,<8.4.0
     - parmed >=3.4.3
     - networkx >=2.5
     - lark
@@ -33,6 +33,8 @@ requirements:
     - gmso >=0.12.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - foyer
 
